@@ -1,0 +1,12 @@
+Hello {{ user.get_full_name|default:user.email }},
+
+Please confirm your email for LinguaForge by clicking the link below:
+
+{{ confirm_url }}
+
+This link expires in {{ expiry_seconds }} seconds.
+
+If you did not create an account, ignore this email.
+
+Thanks,
+LinguaForge

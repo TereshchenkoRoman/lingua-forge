@@ -25,7 +25,7 @@ class GoogleAuthURLView(APIView):
 
     def get(self, request):
         url, signed_state, _ = build_google_oauth_url(request)
-        response = Response({"auth_url": url}, status=status.HTTP_200_OK)
+        response = Response({"url": url}, status=status.HTTP_200_OK)
         response = set_oauth_state_cookie(response, signed_state, cookie_name=OAUTH_STATE_COOKIE)
         return response
 

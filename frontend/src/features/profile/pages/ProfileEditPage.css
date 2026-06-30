@@ -1,0 +1,138 @@
+.profile-edit-page,
+.profile-edit-page * {
+  box-sizing: border-box;
+}
+
+.profile-edit-page {
+  width: 100%;
+  min-width: 0;
+  color: #08112f;
+}
+
+.profile-edit-page svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.profile-edit-page__header {
+  margin: 0 0 28px;
+}
+
+.profile-edit-page__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-bottom: 18px;
+  color: #4b35ff;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.16s ease;
+}
+
+.profile-edit-page__back-link:hover {
+  color: #2f49ff;
+}
+
+.profile-edit-page__back-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.profile-edit-page__header h1 {
+  margin: 0;
+  color: #07102d;
+  font-size: clamp(34px, 3vw, 46px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+
+.profile-edit-page__header p {
+  max-width: 720px;
+  margin: 12px 0 0;
+  color: #65718e;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.profile-edit-page--state {
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+}
+
+.profile-edit-state-card {
+  display: grid;
+  justify-items: center;
+  width: min(100%, 520px);
+  padding: 34px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e1e7f5;
+  border-radius: 24px;
+  box-shadow: 0 20px 52px rgba(32, 47, 100, 0.07);
+}
+
+.profile-edit-state-card__icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7c5cff, #2f49ff);
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.profile-edit-state-card--error .profile-edit-state-card__icon {
+  background: linear-gradient(135deg, #ff8a1f, #ff5a3c);
+}
+
+.profile-edit-state-card h1 {
+  margin: 0;
+  color: #07102d;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.profile-edit-state-card p {
+  max-width: 380px;
+  margin: 12px 0 0;
+  color: #65718e;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.profile-edit-state-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 22px;
+  padding: 0 18px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3545ff 0%, #2637f2 100%);
+  border-radius: 12px;
+  box-shadow: 0 16px 32px rgba(47, 60, 255, 0.22);
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .profile-edit-page__header h1 {
+    font-size: 34px;
+  }
+
+  .profile-edit-page__header p {
+    font-size: 15px;
+  }
+}

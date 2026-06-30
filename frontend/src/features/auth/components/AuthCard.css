@@ -1,0 +1,37 @@
+.auth-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  min-width: 700px;
+  padding: 46px 64px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #dfe5f2;
+  border-radius: 24px;
+}
+
+.auth-card-body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-card .auth-form {
+  width: 100%;
+  max-width: 560px;
+  min-width: 560px;
+}
+
+@media (max-width: 760px) {
+  .auth-card {
+    max-width: 100%;
+    min-width: 0;
+    padding: 36px 22px;
+    border-radius: 20px;
+  }
+
+  .auth-card .auth-form {
+    max-width: 100%;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,241 @@
+.auth-bg-glyphs {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.auth-bg-glyph {
+  position: absolute;
+  display: block;
+  color: var(--glyph-color);
+  font-family:
+    Inter,
+    "Noto Sans",
+    "Noto Sans JP",
+    "Noto Sans SC",
+    "Segoe UI Symbol",
+    Arial,
+    sans-serif;
+  font-size: var(--glyph-size);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+  opacity: 0.5;
+  filter: blur(0.1px);
+  transform: rotate(var(--glyph-rotate));
+  transform-origin: center;
+}
+
+.auth-bg-glyph--1 {
+  top: 4%;
+  left: 3%;
+
+  --glyph-size: 148px;
+  --glyph-color: rgba(67, 86, 255, 0.22);
+  --glyph-rotate: -13deg;
+}
+
+.auth-bg-glyph--2 {
+  top: 12%;
+  left: 49%;
+
+  --glyph-size: 84px;
+  --glyph-color: rgba(125, 92, 255, 0.16);
+  --glyph-rotate: -4deg;
+}
+
+.auth-bg-glyph--3 {
+  top: 5%;
+  right: 10%;
+
+  --glyph-size: 138px;
+  --glyph-color: rgba(80, 113, 255, 0.17);
+  --glyph-rotate: -12deg;
+}
+
+.auth-bg-glyph--4 {
+  top: 28%;
+  left: 35%;
+
+  --glyph-size: 92px;
+  --glyph-color: rgba(126, 94, 255, 0.13);
+  --glyph-rotate: 11deg;
+}
+
+.auth-bg-glyph--5 {
+  top: 44%;
+  right: -1.5%;
+
+  --glyph-size: 122px;
+  --glyph-color: rgba(62, 185, 165, 0.14);
+  --glyph-rotate: 18deg;
+}
+
+.auth-bg-glyph--6 {
+  top: 30%;
+  left: 20%;
+
+  --glyph-size: 136px;
+  --glyph-color: rgba(111, 92, 255, 0.14);
+  --glyph-rotate: 18deg;
+}
+
+.auth-bg-glyph--7 {
+  bottom: 24%;
+  left: 40%;
+
+  --glyph-size: 86px;
+  --glyph-color: rgba(91, 104, 185, 0.13);
+  --glyph-rotate: 12deg;
+}
+
+.auth-bg-glyph--8 {
+  right: 6%;
+  bottom: 3%;
+
+  --glyph-size: 152px;
+  --glyph-color: rgba(109, 90, 255, 0.14);
+  --glyph-rotate: -8deg;
+}
+
+.auth-bg-glyph--9 {
+  top: 40%;
+  left: 46%;
+
+  --glyph-size: 112px;
+  --glyph-color: rgba(76, 98, 255, 0.105);
+  --glyph-rotate: -10deg;
+}
+
+.auth-bg-glyph--10 {
+  top: 3%;
+  left: 29%;
+
+  --glyph-size: 92px;
+  --glyph-color: rgba(58, 178, 154, 0.11);
+  --glyph-rotate: 16deg;
+}
+
+.auth-bg-glyph--11 {
+  bottom: 10%;
+  left: 50%;
+
+  --glyph-size: 104px;
+  --glyph-color: rgba(58, 178, 154, 0.12);
+  --glyph-rotate: 7deg;
+}
+
+.auth-bg-glyph--12 {
+  bottom: 34%;
+  left: 1%;
+
+  --glyph-size: 104px;
+  --glyph-color: rgba(62, 181, 168, 0.115);
+  --glyph-rotate: 21deg;
+}
+
+@media (max-width: 1380px) {
+  .auth-bg-glyph {
+    opacity: 0.043;
+  }
+
+  .auth-bg-glyph--1 { --glyph-size: 128px; }
+  .auth-bg-glyph--2 { --glyph-size: 74px; }
+  .auth-bg-glyph--3 { --glyph-size: 118px; }
+  .auth-bg-glyph--4 { --glyph-size: 82px; }
+  .auth-bg-glyph--5 { --glyph-size: 106px; }
+  .auth-bg-glyph--6 { --glyph-size: 118px; }
+  .auth-bg-glyph--7 { --glyph-size: 76px; }
+  .auth-bg-glyph--8 { --glyph-size: 132px; }
+  .auth-bg-glyph--9 { --glyph-size: 96px; }
+  .auth-bg-glyph--10 { --glyph-size: 80px; }
+  .auth-bg-glyph--11 { --glyph-size: 92px; }
+  .auth-bg-glyph--12 { --glyph-size: 92px; }
+}
+
+@media (max-width: 1180px) {
+  .auth-bg-glyph {
+    opacity: 0.037;
+  }
+
+  .auth-bg-glyph--1 {
+    top: 4%;
+    left: -3%;
+
+    --glyph-size: 112px;
+  }
+
+  .auth-bg-glyph--2 {
+    top: 12%;
+    left: 46%;
+
+    --glyph-size: 66px;
+  }
+
+  .auth-bg-glyph--3 {
+    top: 7%;
+    right: 8%;
+
+    --glyph-size: 102px;
+  }
+
+  .auth-bg-glyph--4 {
+    top: 22%;
+    left: 18%;
+
+    --glyph-size: 76px;
+  }
+
+  .auth-bg-glyph--5 {
+    top: 44%;
+    right: -3%;
+
+    --glyph-size: 92px;
+  }
+
+  .auth-bg-glyph--6 {
+    top: auto;
+    bottom: 16%;
+    left: 2%;
+
+    --glyph-size: 100px;
+  }
+
+  .auth-bg-glyph--7 {
+    right: 20%;
+    bottom: 12%;
+    left: auto;
+
+    --glyph-size: 72px;
+  }
+
+  .auth-bg-glyph--8 {
+    right: 3%;
+    bottom: 3%;
+
+    --glyph-size: 116px;
+  }
+
+  .auth-bg-glyph--9 {
+    top: 31%;
+    left: 42%;
+
+    --glyph-size: 84px;
+  }
+
+  .auth-bg-glyph--10,
+  .auth-bg-glyph--11,
+  .auth-bg-glyph--12 {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .auth-bg-glyphs {
+    display: none;
+  }
+}

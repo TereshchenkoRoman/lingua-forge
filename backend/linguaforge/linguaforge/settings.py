@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "drf_spectacular",
     "django_extensions",
-    "ratelimit",
+    # "ratelimit",
 
     "accounts",
     "authsvc",
@@ -121,10 +121,10 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(seconds=int(os.getenv("JWT_ACCESS_LIFETIME_MINUTES", "15"))),
-    "REFRESH_TOKEN_LIFETIME": timedelta(seconds=int(os.getenv("JWT_REFRESH_LIFETIME_DAYS", "30"))),
-    # "ACCESS_TOKEN_LIFETIME": timedelta(minutes=int(os.getenv("JWT_ACCESS_LIFETIME_MINUTES", "15"))),
-    # "REFRESH_TOKEN_LIFETIME": timedelta(days=int(os.getenv("JWT_REFRESH_LIFETIME_DAYS", "30"))),
+    # "ACCESS_TOKEN_LIFETIME": timedelta(seconds=int(os.getenv("JWT_ACCESS_LIFETIME_MINUTES", "15"))),
+    # "REFRESH_TOKEN_LIFETIME": timedelta(seconds=int(os.getenv("JWT_REFRESH_LIFETIME_DAYS", "30"))),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=int(os.getenv("JWT_ACCESS_LIFETIME_MINUTES", "15"))),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=int(os.getenv("JWT_REFRESH_LIFETIME_DAYS", "30"))),
     "ROTATE_REFRESH_TOKENS": os.getenv("JWT_ROTATE_REFRESH_TOKENS", "True").lower() in ("true", "1", "yes"),
     "BLACKLIST_AFTER_ROTATION": os.getenv("JWT_BLACKLIST_AFTER_ROTATION", "True").lower() in ("true", "1", "yes"),
     "AUTH_HEADER_TYPES": ("Bearer",),

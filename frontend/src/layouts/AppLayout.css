@@ -1,0 +1,354 @@
+.app-layout,
+.app-layout * {
+  box-sizing: border-box;
+}
+
+.app-layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: #08112f;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(73, 122, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 0% 100%, rgba(108, 92, 255, 0.11), transparent 32%),
+    linear-gradient(135deg, #fbfcff 0%, #f8faff 52%, #f4f7ff 100%);
+}
+
+.app-layout svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.app-layout__sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 280px;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.78);
+  border-right: 1px solid #e1e7f5;
+  backdrop-filter: blur(20px);
+}
+
+.app-layout__sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 24px 24px;
+  overflow: visible;
+}
+
+.app-layout__brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  color: #08112f;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  text-decoration: none;
+}
+
+.app-layout__brand-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #2f49ff;
+}
+
+.app-layout__brand-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.app-layout__nav {
+  display: grid;
+  flex: 0 0 auto;
+  gap: 8px;
+  margin-top: 42px;
+}
+
+.app-layout__link {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  color: #25304a;
+  background: transparent;
+  border: 0;
+  border-radius: 14px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.16s ease,
+    color 0.16s ease;
+}
+
+.app-layout__link:hover {
+  color: #2f49ff;
+  background: #f4f6ff;
+}
+
+.app-layout__link--active {
+  color: #2f36ff;
+  background: linear-gradient(135deg, rgba(108, 92, 255, 0.16), rgba(47, 73, 255, 0.08));
+}
+
+.app-layout__link svg {
+  width: 22px;
+  height: 22px;
+}
+
+.app-layout__sidebar-bottom {
+  display: grid;
+  flex: 0 0 auto;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.app-layout__telegram {
+  padding: 20px;
+  color: #25304a;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(47, 73, 255, 0.16), transparent 38%),
+    linear-gradient(135deg, #f4f0ff 0%, #eef3ff 100%);
+  border: 1px solid #e0d7ff;
+  border-radius: 18px;
+  box-shadow: 0 18px 36px rgba(47, 73, 255, 0.08);
+}
+
+.app-layout__telegram strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.app-layout__telegram p {
+  margin: 8px 0 16px;
+  color: #65718e;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.app-layout__telegram-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 42px;
+  color: #2442e8;
+  background: #ffffff;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(32, 47, 100, 0.06);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    box-shadow 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.app-layout__telegram-button:hover {
+  color: #2f49ff;
+  box-shadow: 0 14px 24px rgba(32, 47, 100, 0.09);
+  transform: translateY(-1px);
+}
+
+.app-layout__telegram-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.app-layout__logout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 0 16px;
+  color: #c0352b;
+  background: #fff1f0;
+  border: 1px solid #ffd2cf;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.16s ease,
+    box-shadow 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.app-layout__logout:hover {
+  color: #a32018;
+  background: #ffe8e5;
+  box-shadow: 0 12px 24px rgba(192, 53, 43, 0.1);
+  transform: translateY(-1px);
+}
+
+.app-layout__logout svg {
+  width: 20px;
+  height: 20px;
+}
+
+.app-layout__footer {
+  color: #7c8aa5;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.app-layout__main {
+  width: calc(100% - 280px);
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin-left: 280px;
+  overflow: visible;
+}
+
+.app-layout__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 86px;
+  padding: 24px 48px 0;
+}
+
+.app-layout__profile {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  color: #25304a;
+  text-decoration: none;
+}
+
+.app-layout__avatar {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7c5cff, #2f49ff);
+  border-radius: 50%;
+  box-shadow: 0 14px 28px rgba(47, 73, 255, 0.2);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.app-layout__profile strong {
+  display: block;
+  color: #08112f;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.app-layout__profile small {
+  display: block;
+  margin-top: 3px;
+  color: #65718e;
+  font-size: 12px;
+}
+
+.app-layout__content {
+  width: 100%;
+  min-width: 0;
+  padding: 0 48px 64px;
+  overflow: visible;
+}
+
+@media (max-width: 1380px) {
+  .app-layout__sidebar {
+    width: 248px;
+  }
+
+  .app-layout__sidebar-inner {
+    padding: 32px 20px 24px;
+  }
+
+  .app-layout__main {
+    width: calc(100% - 248px);
+    margin-left: 248px;
+  }
+
+  .app-layout__topbar {
+    padding: 24px 32px 0;
+  }
+
+  .app-layout__content {
+    padding: 0 32px 56px;
+  }
+}
+
+@media (max-width: 980px) {
+  .app-layout__sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .app-layout__sidebar-inner {
+    height: auto;
+    padding: 20px;
+  }
+
+  .app-layout__nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 24px;
+  }
+
+  .app-layout__sidebar-bottom {
+    display: none;
+  }
+
+  .app-layout__main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .app-layout__topbar {
+    padding: 24px 20px 0;
+  }
+
+  .app-layout__content {
+    padding: 0 20px 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-layout__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .app-layout__topbar,
+  .app-layout__profile {
+    justify-content: flex-start;
+  }
+
+  .app-layout__profile {
+    width: 100%;
+  }
+}
